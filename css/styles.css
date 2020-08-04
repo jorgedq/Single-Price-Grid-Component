@@ -1,0 +1,113 @@
+/*************************************/
+/*            Globals                */
+/*************************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*----- colors ------*/
+  --body: #e6eff6;
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-light: #4abebd;
+  --bright-ellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/*----- body ------*/
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background: var(--body);
+}
+/*----- wrappers ------*/
+.wrapper__body {
+  margin: 4em 1.8em;
+  position: relative;
+}
+.wrapper__body::before {
+  content: "";
+  width: 100%;
+  background-color: var(--grayish-blue);
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5em;
+  z-index: -1;
+  filter: blur(1px);
+}
+.wrapper__section {
+  padding: 1em;
+  border: 0.5em;
+}
+/*----- header ------*/
+header {
+  background: #fff;
+  border-radius: 0.5em 0.5em 0 0;
+}
+header h1 {
+  color: var(--cyan);
+  padding: 0.3em 0 0.5em;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+header h2 {
+  color: var(--bright-ellow);
+  padding: 0.5em 0 1em;
+  font-size: inherit;
+}
+header p {
+  color: var(--grayish-blue);
+  line-height: 1.6em;
+  font-size: 0.9em;
+}
+/*----- section ------*/
+section {
+  color: #fff;
+}
+/*----- section 1 ------*/
+#section1 {
+  background: var(--cyan);
+}
+#section1 h2 {
+  font-size: 1.2em;
+  padding: 0.3em 0 0.7em;
+}
+#section1 .price {
+  font-size: 2em;
+}
+.price span {
+  font-size: 0.5em;
+  opacity: 0.5;
+}
+#section1 .access {
+  padding: 0.5em 0;
+}
+#section1 .sign__up__button {
+  background-color: var(--bright-ellow);
+  margin: 1em 0;
+  padding: 1em 1em;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 0.5em;
+}
+/*----- section 2 ------*/
+#section2 {
+  background: var(--cyan-light);
+  border-radius: 0 0 0.5em 0.5em;
+}
+#section2 h2 {
+  font-size: 1.1em;
+}
+#section2 ul {
+  font-size: 0.9em;
+  opacity: 0.8;
+  padding: 1em 0;
+  list-style: none;
+}
+#section2 ul li {
+  margin: 0.3em 0;
+}
